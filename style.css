@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 824px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-box {
+  width: calc(50% - 24px);
+  padding: 24px 24px 0;
+  border: 1px solid #eaeaea;
+  margin: 0 auto 24px;
+  background-color: #fff;
+}
+
+.btn-draw,
+.btn-erase {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  border: 1px solid #e3e3e3;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.btn-draw:hover,
+.btn-erase:hover {
+  border: 1px solid #000000;
+}
+
+.btn-erase {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.active .btn-draw {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.active .btn-erase {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.svg-box svg {
+  width: 100%;
+}
+
+.action {
+  padding: 24px;
+  border-top: 1px solid #eaeaea;
+  border-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 24px;
+  }
+  .svg-box {
+    width: calc(100% - 24px);
+  }
+}
